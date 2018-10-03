@@ -1,0 +1,48 @@
+Digit Function
+Time limit: 2500 ms
+Memory limit: 256 MB
+
+You are given an integer XX and a function FF defined as:
+
+F(0) = 0F(0)=0 
+F(X) = F(X - \text{Sum of digits of X})F(X)=F(X−Sum of digits of X) 
+Find out the number of times the function FF will be called for a given value of XX.
+
+Standard input
+The first line contains a single integer XX.
+
+Standard output
+The first line should contain the answer.
+
+Constraints and notes
+0 \leq X \leq 10^40≤X≤10
+​4
+​​ 
+Input	Output	Explanation
+9
+2
+f(9) = f(9 - 9)f(9)=f(9−9)
+
+f(0) = 0f(0)=0
+
+10
+3
+f(10) = f(10 - 1)f(10)=f(10−1)
+
+f(9) = f(9 - 9)f(9)=f(9−9)
+
+f(0) = 0f(0)=0
+
+47
+6
+f(47) = f(47 - 4 - 7)f(47)=f(47−4−7) 
+
+f(36) = f(36 - 3 - 6)f(36)=f(36−3−6) 
+
+f(27) = f(27 - 2 - 7)f(27)=f(27−2−7) 
+
+f(18) = f(18 - 1 - 8)f(18)=f(18−1−8) 
+
+f(9) = f(9 - 9)f(9)=f(9−9) 
+
+f(0) = 0f(0)=0
